@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "MyUDP.h"
+@interface ViewController : UIViewController<UDPEchoDelegate>
 
 @end

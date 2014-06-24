@@ -21,6 +21,9 @@
 		04711CBE195923B100A65946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04711CA0195923B100A65946 /* UIKit.framework */; };
 		04711CC6195923B100A65946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04711CC4195923B100A65946 /* InfoPlist.strings */; };
 		04711CC8195923B100A65946 /* zunyizhanguanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04711CC7195923B100A65946 /* zunyizhanguanTests.m */; };
+		04711CD61959318B00A65946 /* MyUDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 04711CD51959318B00A65946 /* MyUDP.m */; };
+		04711CDC19595A5300A65946 /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 04711CDA19595A5300A65946 /* selected.png */; };
+		04711CDD19595A5300A65946 /* unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 04711CDB19595A5300A65946 /* unselected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		04711CC3195923B100A65946 /* zunyizhanguanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zunyizhanguanTests-Info.plist"; sourceTree = "<group>"; };
 		04711CC5195923B100A65946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04711CC7195923B100A65946 /* zunyizhanguanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zunyizhanguanTests.m; sourceTree = "<group>"; };
+		04711CD41959318B00A65946 /* MyUDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUDP.h; sourceTree = "<group>"; };
+		04711CD51959318B00A65946 /* MyUDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUDP.m; sourceTree = "<group>"; };
+		04711CDA19595A5300A65946 /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
+		04711CDB19595A5300A65946 /* unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,9 @@
 		04711CA2195923B100A65946 /* zunyizhanguan */ = {
 			isa = PBXGroup;
 			children = (
+				04711CD919595A4100A65946 /* img */,
+				04711CD41959318B00A65946 /* MyUDP.h */,
+				04711CD51959318B00A65946 /* MyUDP.m */,
 				04711CAB195923B100A65946 /* AppDelegate.h */,
 				04711CAC195923B100A65946 /* AppDelegate.m */,
 				04711CAE195923B100A65946 /* Main.storyboard */,
@@ -150,6 +160,15 @@
 				04711CC4195923B100A65946 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04711CD919595A4100A65946 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				04711CDA19595A5300A65946 /* selected.png */,
+				04711CDB19595A5300A65946 /* unselected.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04711CDC19595A5300A65946 /* selected.png in Resources */,
 				04711CB5195923B100A65946 /* Images.xcassets in Resources */,
 				04711CA7195923B100A65946 /* InfoPlist.strings in Resources */,
 				04711CB0195923B100A65946 /* Main.storyboard in Resources */,
+				04711CDD19595A5300A65946 /* unselected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04711CD61959318B00A65946 /* MyUDP.m in Sources */,
 				04711CB3195923B100A65946 /* ViewController.m in Sources */,
 				04711CAD195923B100A65946 /* AppDelegate.m in Sources */,
 				04711CA9195923B100A65946 /* main.m in Sources */,
