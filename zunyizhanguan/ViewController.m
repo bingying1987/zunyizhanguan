@@ -33,6 +33,7 @@
         NSLog(@"load image faild");
     }
     udp = [[MyUDP alloc] init];
+    udp.delegate = self;
     NSError *strerr = nil;
     if(![udp StartUdpCenter:1024 error:&strerr])
     {
@@ -49,11 +50,11 @@
 
 - (IBAction)btselectchange:(UIButton *)sender {
     if (lastButton) {
-        [lastButton setBackgroundImage:imageUnSelected forState:UIControlStateNormal];
+        [lastButton setImage:imageUnSelected forState:UIControlStateNormal];
     }
     
     lastButton = sender;
-    [sender setBackgroundImage:imageSelected forState:UIControlStateNormal];
+    [sender setImage:imageSelected forState:UIControlStateNormal];
     select = sender.tag;
 }
 
@@ -86,6 +87,7 @@
         default:
             break;
     }
+    [udp sendData:buf Length:strlen(pstr) + 3 IP:"192.168.2.100" Port:1024];
     [udp BroadUdp:buf Length:strlen(pstr) + 3 IP:"192.168.1.255" Port:5045];
 }
 

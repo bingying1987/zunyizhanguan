@@ -26,7 +26,7 @@
                                 <rect key="frame" x="152" y="718" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="selected.png">
+                                <state key="normal" image="unselected.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -118,7 +118,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="selected.png" width="50" height="50"/>
         <image name="unselected.png" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
